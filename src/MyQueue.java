@@ -39,12 +39,13 @@ public class MyQueue {
             System.out.println("Queue is Empty");
             return;
         }
+        System.out.println(queueArr[0]+" have been remove from Queue");
         for (int i = 0; i < currentSize - 1; i++) {
             queueArr[i] = queueArr[i+1];
         }
         queueArr[currentSize] = 0;
         currentSize--;
-        System.out.println(queueArr[0]+" have been remove from Queue");
+
 
     }
 }
